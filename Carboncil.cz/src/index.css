@@ -1,0 +1,45 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+@layer Components {
+    .nav {
+        @apply font-[Inter]
+    }
+
+    .hero span  {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+
+    .redSpan {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+
+    .hero p, a, button {
+        @apply font-[Inter] font-medium
+    }
+
+    .productSection h2 {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+
+    .productSection p, h3 {
+       @apply font-[Inter]
+    }
+    
+    .family {
+        @apply font-[Inter]
+    }
+
+    .faq {
+        @apply font-[Inter]
+    }
+
+    .faq h2 {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+
+    footer {
+       @apply font-[Inter]
+    }
+}
