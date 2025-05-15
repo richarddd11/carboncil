@@ -1,52 +1,35 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 const Footer = () => {
+  const { t } = useTranslation();
+
   return (
-    <footer className='relative px-5 max-w-410 rounded-b-3xl py-30 mb-20 pt-38 mx-auto bg-no-repeat bg-cover bg-center' style={{ backgroundImage: "url('/faqSecBg.png')" }}>
-            
-        <div className="flex flex-col justify-between sm:flex-row  py-4 px-2 text-sm md:text-base">
-          
-            <div>
-                <p className='mt-4 text-white'>Uhlí, které griluje chytře.</p>
-            </div>
+    <footer className="relative footer1 bg-black text-white  mx-auto w-[97%] px-6 pt-20 pb-20 mb-5 rounded-4xl overflow-hidden">
+      <div className="flex flex-col md:flex-row justify-between items-center py-4 px-2 text-sm md:text-base">
+        <p className="text-center text-sm font-medium mb-4 md:mb-0">{t('footer_slogan')}</p>
+        <nav className="flex flex-wrap justify-center gap-15 text-sm font-medium">
+          <Link to="/" className="hover:text-gray-400 transition">
+            {t('nav_home')}
+          </Link>
+          <Link to="/o-nas" className="hover:text-[#A40C0B] transition">
+            {t('nav_about')}
+          </Link>
+          <Link to="/uhlie" className="hover:text-[#A40C0B] transition">
+            {t('nav_products')}
+          </Link>
+          <Link to="/kontakt" className="hover:text-[#A40C0B] transition">
+            {t('nav_contact')}
+          </Link>
+        </nav>
+      </div>
+      <div className="flex justify-between items-center px-2">
+        <img src="HeroLogo.png" alt="Logo" className="h-6" />
+        <p className="text-[#696969] text-xs font-medium">Copyright © 2025 Carboncil</p>
+      </div>
+    </footer>
+  );
+};
 
-            <nav className="flex items-end float-right text-right text-base gap-10 mb-5 sm:mb-0">
-            <a href="#" className="text-white hover:text-gray-300 transition">
-              O nás
-            </a>
-            <a href="#" className="text-white hover:text-gray-300 transition">
-              Carboncil
-            </a>
-            <a href="#" className="text-white hover:text-gray-300 transition">
-              Kontakt
-            </a>
-            <a href="#" className="text-white hover:text-gray-300 transition">
-              Carbonito
-            </a>
-            <a href="#" className="text-white hover:text-gray-300 transition">
-              Top Quality
-            </a>
-          </nav>
-
-          </div>
-          <div className='flex flex-row justify-between'>
-                <img className='pl-2'  src="/HeroLogo.png" alt="" />
-                <p className="text-gray-400">© 2025 Carboncil</p>
-          </div>
-
-          <div className='flex flex-row absolute right-0 bottom-0'>
-            <div className='mr-2 p-2 text-white bg-black rounded-xl'>
-                <img src="/Youtube.png" alt="" />
-            </div>
-            <div className='mr-2 p-2 text-white bg-black rounded-xl'>
-                <img src="/Instagram.png" alt="" />
-            </div>
-            <div className='text-white bg-black p-2 rounded-xl'>
-                <img src="/OBJECTS.png" alt="" />
-            </div>
-          </div>
-        </footer>
-  )
-}
-
-export default Footer
+export default Footer;

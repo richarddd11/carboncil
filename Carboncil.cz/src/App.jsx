@@ -1,26 +1,25 @@
-import React from 'react'
-import './App.css'
-import NavBar from './Components/NavBar'
-import HeroSection from './Components/HeroSection'
-import ProductSection from './Components/ProductSection'
-import FamilySection from './Components/FamilySection'
-import AboutUs from './Components/AboutUs'
-import FaqSection from './Components/FaqSection'
-import Footer from './Components/Footer'
+// src/ProtectedApp.jsx
+import React from 'react';
+import { Routes, Route, Navigate } from 'react-router-dom';
+import NavBar from './components/NavBar';
+import HomePage from './pages/HomePage';
+import AboutPage from './pages/AboutPage';
+import ContactPage from './pages/ContactPage';
+import ProductPageWrapper from './pages/ProductPageWrapper';
+import ScrollToTop from './components/ScrollToTop';
 
-function App() {
+const ProtectedApp = () => (
+  <>
+    <NavBar />
+    <ScrollToTop />
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/o-nas" element={<AboutPage />} />
+      <Route path="/uhlie" element={<ProductPageWrapper />} />
+      <Route path="/kontakt" element={<ContactPage />} />
+      <Route path="*" element={<Navigate to="/" replace />} />
+    </Routes>
+  </>
+);
 
-  return (
-    <div>
-      <NavBar />
-      <HeroSection />
-      <ProductSection />
-      <FamilySection />
-      <AboutUs />
-      <FaqSection />
-      <Footer />
-    </div>
-  )
-}
-
-export default App
+export default ProtectedApp;

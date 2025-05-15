@@ -1,45 +1,1562 @@
-@import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+@import "tailwindcss";
+
+
 
 @layer Components {
-    .nav {
-        @apply font-[Inter]
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .nav {
+   @apply font-[Inter]
+  }
+
+  .hero span,
+  .hero h1 {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+
+  .redSpan {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+
+  .hero p,
+  .hero a,
+  .hero button {
+    @apply font-[Inter];
+  }
+
+
+  .productSection h2 {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+
+  .product h3 {
+    @apply font-[Inter];
+  }
+
+  .productSection p,
+  .productSection h3 {
+    @apply font-[Inter];
+  }
+
+  .family {
+    @apply font-[Inter];
+  }
+
+  .about-text {
+    @apply font-[Inter];
+  }
+
+  .about-us {
+    @apply font-[Inter];
+  }
+
+  .faq span,
+  .faq p,
+  .faq button,
+  .faq nav,
+  .faq a {
+    @apply font-[Inter];
+  }
+
+  .productPage p,
+  .productPage h3 {
+    @apply font-[Inter];
+  }
+
+  .faq,
+  .productSec h2 {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+
+  .contactPage h1,
+  .aboutPage h2,
+  .aboutPage h3 {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+
+  .aboutPage {
+    @apply font-[Inter];
+  }
+
+  .contactPage h2, .contactPage h3, .contactPage p {
+    @apply font-[Inter];
+  }
+
+  .qoute {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+  }
+
+  .footer1 {
+    @apply font-[Inter];
+  }
+
+
+  @media (min-width: 500px) {
+    .faq-toggle-open {
+      top: 13%;
+      right: 2%;
+      transform: translateX(-18%);
     }
 
-    .hero span  {
-        font-family: 'Plus Jakarta Sans', sans-serif;
+    .faq-toggle-closed {
+      top: 17%;
+      right: 2%;
+      transform: translateX(-16%);
     }
 
-    .redSpan {
-        font-family: 'Plus Jakarta Sans', sans-serif;
+    .container {
+      width: 95%;
+      margin: 0 auto;
     }
 
-    .hero p, a, button {
-        @apply font-[Inter] font-medium
+    .open-faq {
+      padding: 15px;
     }
 
-    .productSection h2 {
-        font-family: 'Plus Jakarta Sans', sans-serif;
+    .answer {
+      font-size: 16px;
     }
 
-    .productSection p, h3 {
-       @apply font-[Inter]
+    .ques-open {
+      font-size: 18px;
     }
-    
-    .family {
-        @apply font-[Inter]
+  }
+
+  @media (min-width: 700px) {
+    .faq-toggle-open {
+      top: 14%;
+      right: 4%;
+      transform: translateX(-12%);
     }
 
-    .faq {
-        @apply font-[Inter]
+    .faq-toggle-closed {
+      top: 30%;
+      right: 4%;
+      transform: translateX(-8%);
     }
 
-    .faq h2 {
-        font-family: 'Plus Jakarta Sans', sans-serif;
+    .open-faq {
+      padding-top: 45px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .faq-toggle-open {
+      top: 12%;
+      right: 4%;
+      transform: translateX(-14%);
+    }
+
+    .faq-toggle-closed {
+      top: 30%;
+      right: 4%;
+      transform: translateX(-11%);
+    }
+
+    .container {
+      width: 90%;
+    }
+  }
+
+  @media (min-width: 811px) {
+    .container {
+      width: 75%;
+    }
+
+    .faq-toggle-open {
+      top: 8%;
+      right: 3%;
+      transform: translateX(-18%);
+    }
+
+    .faq-toggle-closed {
+      top: 19%;
+      right: 3%;
+      transform: translateX(-16%);
+    }
+
+    .answer {
+      font-size: 15px;
+    }
+
+    .open-faq {
+      padding: 30px;
+    }
+  }
+
+  @media (min-width: 860px) {
+    .container {
+      width: 75%;
+    }
+
+    .faq-toggle-open {
+      top: 7%;
+      right: 3%;
+      transform: translateX(-24%);
+    }
+
+    .faq-toggle-closed {
+      top: 19%;
+      right: 3%;
+      transform: translateX(-21%);
+    }
+
+    .answer {
+      font-size: 15px;
+    }
+
+    .open-faq {
+      padding: 30px;
+    }
+  }
+
+  @media (min-width: 900px) {
+    .faq-toggle-open {
+      top: 15%;
+      right: 4%;
+      transform: translateX(-9%);
+    }
+
+    .faq-toggle-closed {
+      top: 19%;
+      right: 4%;
+      transform: translateX(-7%);
+    }
+
+    .open-faq {
+      padding: 25px;
+    }
+
+    .answer {
+      font-size: 20px;
+      width: 90%;
+    }
+
+    .ques-open {
+      font-size: 23px;
+    }
+  }
+
+  @media (min-width: 950px) {
+    .faq-toggle-open {
+      top: 16%;
+      right: 4%;
+      transform: translateX(-12%);
+    }
+
+    .faq-toggle-closed {
+      top: 19%;
+      right: 4%;
+      transform: translateX(-9%);
+    }
+
+    .open-faq {
+      padding: 30px;
+    }
+
+    .answer {
+      font-size: 20px;
+      width: 90%;
+    }
+
+    .ques-open {
+      font-size: 23px;
+    }
+  }
+
+  @media (min-width: 970px) {
+    .faq-toggle-open {
+      top: 17%;
+      right: 4%;
+      transform: translateX(-14%);
+    }
+
+    .faq-toggle-closed {
+      top: 19%;
+      right: 4%;
+      transform: translateX(-11%);
+    }
+
+    .open-faq {
+      padding: 35px;
+    }
+
+    .answer {
+      font-size: 20px;
+      width: 90%;
+    }
+
+    .ques-open {
+      font-size: 23px;
+    }
+  }
+
+  @media (min-width: 984px) {
+    .faq-toggle-open {
+      top: 17%;
+      right: 4%;
+      transform: translateX(-14%);
+    }
+
+    .faq-toggle-closed {
+      top: 19%;
+      right: 4%;
+      transform: translateX(-11%);
+    }
+
+    .open-faq {
+      padding: 37px;
+    }
+
+    .answer {
+      font-size: 20px;
+      width: 85%;
+    }
+
+    .ques-open {
+      font-size: 23px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .faq-toggle-open {
+      top: 13%;
+      right: 4%;
+      transform: translateX(-15%);
+    }
+
+    .faq-toggle-closed {
+      top: 30%;
+      right: 4%;
+      transform: translateX(-14%);
+    }
+
+    .open-faq {
+      margin-bottom: 10px;
+    }
+  }
+
+  @media (min-width: 1024px) and (max-width: 1135px) {
+    .container {
+      width: 80%;
+      padding: 0 40px;
+    }
+
+    .faq-toggle-open {
+      top: 17%;
+      right: 4%;
+      transform: translateX(-13%);
+    }
+
+    .faq-toggle-closed {
+      top: 20%;
+      right: 4%;
+      transform: translateX(-11%);
+    }
+
+    .closed-faq {
+      padding: 20px;
+    }
+  }
+
+  @media (min-width: 1079px) and (max-width: 1135px) {
+    .container {
+      width: 80%;
+      padding: 0 40px;
+    }
+
+    .faq-toggle-open {
+      top: 16%;
+      right: 4%;
+      transform: translateX(-18%);
+    }
+
+    .faq-toggle-closed {
+      top: 20%;
+      right: 4%;
+      transform: translateX(-14%);
+    }
+
+    .answer {
+      width: 80%;
+    }
+  }
+
+  @media (min-width: 1135px) {
+    .faq-toggle-open {
+      top: 10%;
+      right: 3%;
+      transform: translateX(-10%);
+    }
+
+    .faq-toggle-closed {
+      top: 19%;
+      right: 3%;
+      transform: translateX(-9%);
+    }
+
+    .container {
+      width: 95%;
+    }
+
+    .open-faq {
+      background-size: 100%;
+      margin: 0;
+      padding: 14px;
+      margin-bottom: 8px;
+    }
+
+    .answer {
+      font-size: 15px;
+    }
+  }
+
+  @media (min-width: 1360px) {
+    .faq-toggle-open {
+      top: 13%;
+      right: 3%;
+      transform: translateX(-11%);
+    }
+
+    .faq-toggle-closed {
+      top: 17%;
+      right: 3%;
+      transform: translateX(-9%);
+    }
+
+    .answer {
+      width: 90%;
+      font-size: 17px;
+    }
+  }
+
+  @media (max-width: 1134px) {
+    .text {
+      text-align: center;
+    }
+
+    .footerBtn {
+      margin: 0 auto;
     }
 
     footer {
-       @apply font-[Inter]
+      background-size: 100% auto;
     }
+  }
+
+  @media (max-width: 1662px) {
+    footer {
+      background-size: 1720px auto;
+      background-position: right bottom;
+    }
+  }
+
+  @media (min-width: 540px) and (max-width: 600px) {
+    .faq-toggle-open {
+      top: 13%;
+      right: 2%;
+      transform: translateX(-21%);
+    }
+
+    .faq-toggle-closed {
+      top: 18%;
+      right: 2%;
+      transform: translateX(-20%);
+    }
+
+    .open-faq {
+      background-size: 100%;
+      padding: 18px;
+    }
+
+    .answer {
+      font-size: 17px;
+    }
+  }
+
+  @media (min-width: 570px) and (max-width: 600px) {
+    .faq-toggle-open {
+      top: 14%;
+      right: 2%;
+      transform: translateX(-25%);
+    }
+
+    .faq-toggle-closed {
+      top: 18%;
+      right: 2%;
+      transform: translateX(-24%);
+    }
+
+    .open-faq {
+      background-size: 100%;
+      padding: 18px;
+    }
+
+    .answer {
+      font-size: 18px;
+    }
+  }
+
+  @media (min-width: 600px) and (max-width: 640px) {
+    .faq-toggle-open {
+      top: 17%;
+      right: 2%;
+      transform: translateX(-29%);
+    }
+
+    .faq-toggle-closed {
+      top: 18%;
+      right: 2%;
+      transform: translateX(-24%);
+    }
+
+    .open-faq {
+      background-size: 100%;
+      padding: 28px;
+    }
+
+    .answer {
+      font-size: 18px;
+    }
+  }
+
+  @media (min-width: 625px) and (max-width: 640px) {
+    .faq-toggle-open {
+      top: 16%;
+      right: 3%;
+      transform: translateX(-19%);
+    }
+
+    .faq-toggle-closed {
+      top: 18%;
+      right: 3%;
+      transform: translateX(-17%);
+    }
+
+    .open-faq {
+      background-size: 100%;
+      padding: 28px;
+    }
+
+    .answer {
+      font-size: 18px;
+      width: 90%;
+    }
+  }
+
+  @media (min-width: 640px) and (max-width: 680px) {
+    .faq-toggle-open {
+      top: 14%;
+      right: 3%;
+      transform: translateX(-17%);
+    }
+
+    .faq-toggle-closed {
+      top: 18%;
+      right: 3%;
+      transform: translateX(-16%);
+    }
+
+    .open-faq {
+      background-size: 100%;
+      padding: 18px;
+    }
+
+    .answer {
+      font-size: 19px;
+      width: 90%;
+    }
+
+    .ques-open {
+      font-size: 23px;
+    }
+  }
+
+  @media (min-width: 680px) and (max-width: 720px) {
+    .faq-toggle-open {
+      top: 13%;
+      right: 3%;
+      transform: translateX(-20%);
+    }
+
+    .faq-toggle-closed {
+      top: 18%;
+      right: 3%;
+      transform: translateX(-18%);
+    }
+
+    .open-faq {
+      background-size: 100%;
+      padding: 18px;
+    }
+
+    .answer {
+      font-size: 19px;
+      width: 90%;
+    }
+
+    .ques-open {
+      font-size: 23px;
+    }
+  }
+
+  @media (min-width: 720px) and (max-width: 770px) {
+    .faq-toggle-open {
+      top: 12%;
+      right: 3%;
+      transform: translateX(-23%);
+    }
+
+    .faq-toggle-closed {
+      top: 18%;
+      right: 3%;
+      transform: translateX(-21%);
+    }
+
+    .open-faq {
+      background-size: 100%;
+      padding: 18px;
+    }
+
+    .answer {
+      font-size: 19px;
+      width: 90%;
+    }
+
+    .ques-open {
+      font-size: 23px;
+    }
+  }
+
+  @media (min-width: 770px) and (max-width: 810px) {
+    .faq-toggle-open {
+      top: 11%;
+      right: 3%;
+      transform: translateX(-25%);
+    }
+
+    .faq-toggle-closed {
+      top: 18%;
+      right: 3%;
+      transform: translateX(-24%);
+    }
+
+    .open-faq {
+      background-size: 100%;
+      padding: 18px;
+    }
+
+    .answer {
+      font-size: 19px;
+      width: 85%;
+    }
+
+    .ques-open {
+      font-size: 23px;
+    }
+  }
+
+  @media (min-width: 600px) {
+    .biolih p {
+      font-size: 20px;
+    }
+  
+    .biolih h2 {
+      font-size: 30px;
+    }
+  }
+
+  @media (max-width: 500px) {
+
+    .faq-toggle-open {
+      top: 15%;
+      right: 1%;
+      transform: translateX(-12%);
+    }
+
+    .faq-toggle-closed {
+      top: 30%;
+      right: 1%;
+      transform: translateX(-12%);
+    }
+
+    .open-faq {
+      background-size: 100%;
+      padding: 5px;
+    }
+
+    .closed-faq {
+      background-size: 100%;
+    }
+
+    .container {
+      width: 95%;
+      margin: 0 auto;
+    }
+
+    .ques-open {
+      font-size: 16px;
+      margin-left: 10px;
+    }
+
+    .answer {
+      font-size: 12px;
+      margin-left: 10px;
+      width: 90%;
+    }
+
+    .ques-closed {
+      font-size: 18px;
+    }
+
+    footer nav {
+      font-size: 8px;
+    }
+  }
+
+  @media (min-width: 390px) and (max-width: 420px) {
+    .faq-toggle-open {
+      top: 11%;
+      right: 1%;
+      transform: translateX(-14%);
+    }
+
+    .faq-toggle-closed {
+      top: 15%;
+      right: 1%;
+      transform: translateX(-12%);
+    }
+
+    .open-faq {
+      background-size: 100%;
+      padding: 10px;
+    }
+
+    .answer {
+      font-size: 13px;
+      margin-left: 10px;
+      width: 95%;
+    }
+
+    .ques-closed {
+      font-size: 17px;
+    }
+  }
+
+  @media (min-width: 420px) and (max-width: 440px) {
+    .faq-toggle-open {
+      top: 11%;
+      right: 1%;
+      transform: translateX(-14%);
+    }
+
+    .faq-toggle-closed {
+      top: 15%;
+      right: 1%;
+      transform: translateX(-12%);
+    }
+
+    .open-faq {
+      background-size: 100%;
+      padding: 10px;
+    }
+
+    .answer {
+      font-size: 13px;
+      margin-left: 10px;
+      width: 95%;
+    }
+
+    .ques-closed {
+      font-size: 17px;
+    }
+  }
+
+  @media (min-width: 440px) and (max-width: 480px) {
+    .faq-toggle-open {
+      top: 13%;
+      right: 2%;
+      transform: translateX(-10%);
+    }
+
+    .faq-toggle-closed {
+      top: 17%;
+      right: 2%;
+      transform: translateX(-9%);
+    }
+
+    .open-faq {
+      background-size: 100%;
+      padding: 15px;
+    }
+
+    .answer {
+      font-size: 15px;
+    }
+  }
+
+  @media (min-width: 420px) and (max-width: 440px) {
+    .faq-toggle-open {
+      top: 13%;
+      right: 2%;
+      transform: translateX(-7%);
+    }
+
+    .faq-toggle-closed {
+      top: 17%;
+      right: 2%;
+      transform: translateX(-5%);
+    }
+
+    .open-faq {
+      background-size: 100%;
+      padding: 15px;
+    }
+  }
+
+  @media (min-width: 480px) and (max-width: 500px) {
+    .faq-toggle-open {
+      top: 15%;
+      right: 2%;
+      transform: translateX(-14%);
+    }
+
+    .faq-toggle-closed {
+      top: 17%;
+      right: 2%;
+      transform: translateX(-11%);
+    }
+
+    .open-faq {
+      background-size: 100%;
+      padding: 20px;
+    }
+
+    .answer {
+      font-size: 15px;
+    }
+  }
+
+  @media (min-width: 375px) and (max-width: 390px) {
+    .faq-toggle-open {
+      top: 12%;
+      right: 1%;
+      transform: translateX(-11%);
+    }
+
+    .faq-toggle-closed {
+      top: 16%;
+      right: 1%;
+      transform: translateX(-8%);
+    }
+
+    .open-faq {
+      background-size: 100%;
+      padding: 10px;
+    }
+
+    .answer {
+      font-size: 13px;
+      margin-left: 10px;
+      width: 95%;
+    }
+
+    .ques-closed {
+      font-size: 17px;
+    }
+  }
+
+  @media (min-width: 375px) {
+    .buttons {
+      top: 5px;
+    }
+
+    .buttons a {
+      padding: 7px 10px;
+    }
+
+    
+
+    
+  }
+
+  @media (min-width: 420px) {
+    .buttons {
+      top: 5px;
+    }
+
+    .buttons a {
+      padding: 7px 3px;
+    }
+
+    .buttons a {
+       padding: 0px 14px;
+    }
+  }
+  
+  @media (min-width: 480px) {
+    .buttons {
+      top: 10px;
+    }
+    
+    .buttons a {
+      padding: 7px 24px;
+    }
+    
+    .buttons img {
+      width: 20px;
+      height: 20px;
+    }
+    .heroMobile h1 {
+      font-size: 35px;
+    }
+  }
+
+  @media (min-width: 520px) {
+    .buttons {
+      top: 10px;
+    }
+
+    .buttons a {
+      padding: 9px 33px;
+    }
+
+    .buttons img {
+      width: 20px;
+      height: 20px;
+    }
+
+  }
+
+  @media (min-width: 375px) and (max-width: 500px) {
+    .about-text {
+      font-size: 14px;
+    }
+
+    .text-div {
+      top: 60px !important;
+    }
+
+    .about-us {
+      font-size: 12px;
+      top: 5px !important;
+    }
+
+    .about-btn {
+      width: 38px !important;
+      height: 38px !important;
+    }
+
+    .about-btn img {
+      width: 23px;
+      height: 23px;
+    }
+
+    .footer1 nav {
+      gap: 25px;
+    }
+  }
+
+  @media (min-width: 375px) and (max-width: 700px) {
+    .productSec p, h2 {
+      width: 95%;
+    }
+
+    .charcoal-pr {
+      margin: 10px;
+    }
+
+    .coal {
+      padding: 0;
+    }
+
+    .coal-img {
+      border-radius: 0;
+      width: 100%;
+    }
+
+    .coal .benefits {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      margin: 40px 15px;
+      padding: 10px;
+    }
+
+    .coal .benefits img {
+      margin-bottom: 30px;
+      height: 42px;
+    }
+
+  }
+  
+  @media (min-width: 375px) {
+    .product-text {
+      font-size: 10px;
+    }
+    
+    .product-h3 {
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+  }
+
+  @media (min-width: 375px) and (max-width: 400px) {
+    .biolih p {
+      font-size: 13px;
+    }
+  
+    .biolih h2 {
+      font-size: 27px;
+    }
+    .biolih {
+      padding: 20px;
+    }
+
+    .coal .benefits {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      margin: 40px 15px;
+      padding: 10px;
+    }
+
+    .coal .benefits img {
+      margin-bottom: 30px;
+      height: 36px;
+    }
+
+    .coal .benefits p {
+      font-size: 13px;
+    }
+
+    .charcoal-pr h2 {
+      font-size: 25px;
+    }
+
+    .charcoal-pr p {
+      font-size: 14px;
+    }
+
+    .contactFooter nav {
+      gap: 40px;
+    }
+  }
+
+  @media (min-width: 375px) and (max-width: 385px) {
+    .productHead {
+      font-size: 34px;
+    }
+
+  }
+
+
+  @media (min-width: 385px) {
+    .product-text {
+      font-size: 10.8px;
+    }
+
+    .product-h3 {
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+
+  }
+
+  @media (min-width: 400px) {
+    .product-text {
+      font-size: 11.5px;
+    }
+
+    .product-h3 {
+      font-size: 19px;
+      
+    }
+  }
+
+  @media (min-width: 400px) and (max-width: 500px) {
+    .biolih p {
+      font-size: 14px;
+    }
+  
+    .biolih h2 {
+      font-size: 27px;
+    }
+  }
+
+  @media (min-width: 420px) and (max-width: 475px) { 
+    .aboutBrand h2 {
+      font-size: 26px;
+    }
+
+    .aboutBrand p {
+      font-size: 20px;
+    }
+  }
+
+  @media (min-width: 370px) and (max-width: 420px) {
+    .heroMobile h1 {
+      font-size: 21px;
+    }
+
+    .heroMobile p {
+      font-size: 14px;
+    }
+
+    .buttons a {
+      font-size: 13px;
+    }
+
+    .buttons button {
+      font-size: 13px;
+      margin-right: 5px;
+    }
+
+    .aboutBrand h2 {
+      font-size: 22px;
+    }
+
+    .aboutBrand p {
+      font-size: 18px;
+    }
+
+    .qoute {
+      font-size: 15px;
+    }
+
+    .grill-div h2 {
+      font-size: 20px;
+    }
+
+    .grill-div p {
+      font-size: 17px;
+    }
+
+    .contactHero h1 {
+      font-size: 45px;
+      margin-top: 15px;
+    }
+
+    .contactInfo h2 {
+      font-size: 19px;
+    }
+
+    .contactInfo p {
+      font-size: 16px;
+    }
+
+
+  }
+
+  @media (min-width: 370px) and (max-width: 1023px) { 
+    .contactInfo {
+      text-align: center;
+    }
+
+    .contactFooter nav {
+      justify-content: center;
+    }
+
+    .contactFooter p {
+      text-align: center;
+    }
+
+    .contactHero {
+      gap: 100px;
+    }
+   }
+
+  @media (min-width: 420px) and (max-width: 440px) {
+    .heroMobile h1 {
+      font-size: 29px;
+    }
+
+    .heroMobile p {
+      font-size: 14px;
+    }
+
+    .product-text {
+      font-size: 12.5px;
+    }
+
+    .product-h3 {
+      font-size: 21px;
+      
+    }
+  }
+
+  @media (min-width: 440px) and (max-width: 470px) {
+    .product-text {
+      font-size: 13.5px;
+    }
+
+    .product-h3 {
+      font-size: 22px;
+      
+    }
+  }
+
+  @media (min-width: 490px) and (max-width: 520px) {
+    .product-text {
+      font-size: 15px;
+    }
+
+    .product-h3 {
+      font-size: 22px;
+      
+    }
+  }
+
+  @media (min-width: 479px) and (max-width: 500px) {
+    .heroMobile h1 {
+      font-size: 33px;
+    }
+
+    .heroMobile p {
+      font-size: 16px;
+    }
+  }
+
+  @media (min-width: 460px) {
+    .product-text {
+      font-size: 14.3px;
+    }
+
+    .product-h3 {
+      font-size: 23px;
+    }
+  }
+
+  @media (min-width: 400px) and (max-width: 500px) {
+    .about-text {
+      font-size: 16px;
+    }
+
+    .text-div {
+      top: 50px !important;
+    }
+
+    .about-us {
+      font-size: 12px;
+      top: 5px !important;
+    }
+
+    .about-btn {
+      width: 41px !important;
+      height: 41px !important;
+    }
+
+    .about-btn img {
+      width: 23px;
+      height: 23px;
+      }
+    }
+
+    @media (min-width: 430px) and (max-width: 500px) {
+      .about-text {
+        font-size: 16px;
+      }
+  
+      .text-div {
+        top: 70px !important;
+      }
+  
+      .about-us {
+        font-size: 12px;
+        top: 5px !important;
+      }
+  
+      .about-btn {
+        width: 45px !important;
+        height: 45px !important;
+      }
+  
+      .about-btn img {
+        width: 23px;
+        height: 23px;
+      }
+    }
+
+    @media (min-width: 460px) and (max-width: 600px) {
+      .about-text {
+        font-size: 19px;
+      }
+  
+      .text-div {
+        top: 60px !important;
+      }
+  
+      .about-us {
+        font-size: 12px;
+        top: 5px !important;
+      }
+  
+      .about-btn {
+        width: 45px !important;
+        height: 45px !important;
+      }
+  
+      .about-btn img {
+        width: 23px;
+        height: 23px;
+      }
+
+      .about-us {
+        font-size: 15px;
+      }
+    }
+
+    @media (min-width: 500px) and (max-width: 600px) {
+      .about-text {
+        font-size: 19px;
+      }
+  
+      .text-div {
+        top: 70px !important;
+      }
+  
+      .about-us {
+        font-size: 12px;
+        top: 5px !important;
+      }
+  
+      .about-btn {
+        width: 50px !important;
+        height: 50px !important;
+      }
+  
+      .about-btn img {
+        width: 35px;
+        height: 35px;
+      }
+
+      .about-us {
+        font-size: 16px;
+      }
+
+      .product-text {
+        font-size: 15.5px;
+      }
+  
+      .product-h3 {
+        font-size: 25px;
+      }
+
+      .biolih p {
+        font-size: 16px;
+      }
+    
+      .biolih h2 {
+        font-size: 29px;
+      }
+    }
+
+    @media (min-width: 550px) and (max-width: 599px) {
+      .about-text {
+        font-size: 23px;
+      }
+  
+      .text-div {
+        top: 70px !important;
+      }
+  
+      .about-us {
+        font-size: 12px;
+        top: 5px !important;
+      }
+  
+      .about-btn {
+        width: 56px !important;
+        height: 56px !important;
+      }
+  
+      .about-btn img {
+        width: 35px;
+        height: 35px;
+      }
+
+      .about-us {
+        font-size: 18px;
+      }
+
+      .product-text {
+        font-size: 13px;
+      }
+  
+      .product-h3 {
+        font-size: 20px;
+      }
+    }
+
+    @media (min-width: 550px) and (max-width: 660px) {
+
+      .product {
+        width: 75%;
+        margin: 0 auto;
+        height: auto;
+      }
+    }
+ 
+  @media (min-width: 600px) {
+    .about-text {
+      font-size: 10px;
+    }
+
+    .about-us {
+      font-size: 8px;
+    }
+
+    .about-btn {
+      width: 30px;
+      height: 30px;
+    }
+
+    .about-btn img {
+      width: 23px;
+      height: 23px;
+    }
+
+    .product-text {
+      font-size: 15px;
+    }
+
+    .product-h3 {
+      font-size: 23px;
+    }
+  }
+
+  @media (min-width: 660px) and (max-width: 767px) {
+    .product {
+      width: 65%;
+      margin: 0 auto;
+      height: auto;
+    }
+  }
+
+  @media (min-width: 660px)  {
+    .product-text {
+      font-size: 14px;
+    }
+
+    .product-h3 {
+      font-size: 21px;
+    }
+  }
+
+  @media (min-width: 710px) {
+    .about-text {
+      font-size: 13px;
+    }
+
+    .about-us {
+      font-size: 10px;
+    }
+
+    .product-text {
+      font-size: 16px;
+    }
+
+    .product-h3 {
+      font-size: 23px;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 1010px) {
+    .product-text {
+      font-size: 11px;
+    }
+
+    .product-h3 {
+      font-size: 20px;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 900px) {
+    .aboutBrand h2 {
+      font-size: 40px;
+    }
+    
+  }
+
+  @media (min-width: 820px) and (max-width: 1010px) {
+    .product-text {
+      font-size: 12px;
+    }
+
+    .product-h3 {
+      font-size: 20px;
+    }
+  }
+
+  @media (min-width: 880px) and (max-width: 1010px) {
+    .product-text {
+      font-size: 14px;
+    }
+
+    .product-h3 {
+      font-size: 20px;
+    }
+  }
+
+  @media (min-width: 950px) and (max-width: 1010px) {
+    .product-text {
+      font-size: 16px;
+    }
+
+    .product-h3 {
+      font-size: 23px;
+    }
+  }
+  
+  @media (min-width: 860px) {
+    .about-text {
+      font-size: 16px;
+    }
+
+    .about-us {
+      font-size: 12px;
+    }
+  }
+
+  @media (min-width: 1010px) {
+    .about-text {
+      font-size: 20px;
+    }
+
+    .about-us {
+      font-size: 14px;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .about-text {
+      font-size: 25px;
+    }
+
+    .about-us {
+      font-size: 14px;
+    }
+  }
+
+  @media (max-width: 1145px) {
+    .story {
+      padding-bottom: 0;
+    }
+
+    .grill-div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 50px;
+      text-align: center;
+    }
+  }
 }
