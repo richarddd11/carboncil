@@ -110,5 +110,9 @@
   "carboncil_usage.closed_grill_title": "Priprema u zatvorenim roštiljima (npr. keramički kamado):",
   "carboncil_usage.closed_grill_text": "Ostavite poklopac otvoren prvih 10 minuta dok se ugljen ravnomjerno ne užari, a zatim zatvorite roštilj.",
   "carboncil_usage.safety_title": "Sigurnost i higijena:",
-  "carboncil_usage.safety_text": "Prilikom rukovanja zapaljenim ugljenom koristite rukavice i alate, a nakon roštiljanja pažljivo ugasite pepeo."
+  "carboncil_usage.safety_text": "Prilikom rukovanja zapaljenim ugljenom koristite rukavice i alate, a nakon roštiljanja pažljivo ugasite pepeo.",
+  "cookie.message": "Ova web stranica koristi kolačiće kako bi osigurala najbolje moguće iskustvo.",
+  "cookie.more_info": "Više informacija",
+  "cookie.accept": "Slažem se",
+  "cookie.reject": "Odbaci"
 }

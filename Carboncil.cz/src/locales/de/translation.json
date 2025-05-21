@@ -110,5 +110,9 @@
   "carboncil_usage.closed_grill_title": "Vorbereitung in geschlossenen Grills (z. B. Keramik-Kamado):",
   "carboncil_usage.closed_grill_text": "Lassen Sie den Deckel in den ersten 10 Minuten offen, bis sich die Kohlen gleichmäßig entzünden. Danach den Grill schließen.",
   "carboncil_usage.safety_title": "Sicherheit und Hygiene:",
-  "carboncil_usage.safety_text": "Verwenden Sie beim Umgang mit brennender Kohle Handschuhe und Werkzeuge. Löschen Sie die Asche nach dem Grillen gründlich."
+  "carboncil_usage.safety_text": "Verwenden Sie beim Umgang mit brennender Kohle Handschuhe und Werkzeuge. Löschen Sie die Asche nach dem Grillen gründlich.",
+  "cookie.message": "Diese Website verwendet Cookies, um die bestmögliche Erfahrung zu gewährleisten.",
+  "cookie.more_info": "Weitere Informationen",
+  "cookie.accept": "Ich stimme zu",
+  "cookie.reject": "Ablehnen"
 }

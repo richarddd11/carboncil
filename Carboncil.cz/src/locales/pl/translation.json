@@ -110,5 +110,9 @@
   "carboncil_usage.closed_grill_title": "Przygotowanie w zamkniętych grillach (np. ceramiczny kamado):",
   "carboncil_usage.closed_grill_text": "Pozostaw pokrywę otwartą przez pierwsze 10 minut, aż węgiel równomiernie się rozpali, a następnie zamknij grill.",
   "carboncil_usage.safety_title": "Bezpieczeństwo i higiena:",
-  "carboncil_usage.safety_text": "Podczas pracy z rozpalonym węglem używaj rękawic i narzędzi, a po grillowaniu dokładnie ugasz popiół."
+  "carboncil_usage.safety_text": "Podczas pracy z rozpalonym węglem używaj rękawic i narzędzi, a po grillowaniu dokładnie ugasz popiół.",
+  "cookie.message": "Ta strona używa plików cookie, aby zapewnić jak najlepsze wrażenia.",
+  "cookie.more_info": "Więcej informacji",
+  "cookie.accept": "Akceptuję",
+  "cookie.reject": "Odrzuć"
 }

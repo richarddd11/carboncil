@@ -14,7 +14,7 @@ const CarboncilUsage = () => {
         <img
           src="glowing-charcoal.png"
           alt={t('carboncil_usage.image_alt')}
-          className="w-full h-auto rounded-2xl"
+          className="w-full h-auto rounded-3xl"
         />
       </div>
 

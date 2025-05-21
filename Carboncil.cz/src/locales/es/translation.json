@@ -110,5 +110,9 @@
   "carboncil_usage.closed_grill_title": "Preparación en parrillas cerradas (por ejemplo, kamado cerámico):",
   "carboncil_usage.closed_grill_text": "Deje la tapa abierta durante los primeros 10 minutos hasta que el carbón esté encendido uniformemente, luego cierre la parrilla.",
   "carboncil_usage.safety_title": "Seguridad e higiene:",
-  "carboncil_usage.safety_text": "Utilice guantes y herramientas al manipular carbón encendido. Después de asar, apague completamente las cenizas."
+  "carboncil_usage.safety_text": "Utilice guantes y herramientas al manipular carbón encendido. Después de asar, apague completamente las cenizas.",
+  "cookie.message": "Esta web utiliza cookies para garantizar la mejor experiencia posible.",
+  "cookie.more_info": "Más información",
+  "cookie.accept": "Acepto",
+  "cookie.reject": "Rechazar"
 }

@@ -13,6 +13,16 @@ const languages = [
   { code: 'hr', flag: 'hr' }
 ];
 
+const domainMap = {
+  cs: 'https://www.carboncil.cz',
+  sk: 'https://www.carboncil.sk',
+  es: 'https://www.carboncil.es',
+  de: 'https://www.carboncil.de',
+  en: 'https://www.carboncil.co.uk',
+  pl: 'https://www.carboncil.pl',
+  hr: 'https://www.carboncil.hr',
+};
+
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -20,20 +30,15 @@ const NavBar = () => {
   const dropdownRef = useRef(null);
 
   const linkClass = ({ isActive }) =>
-    `text-base font-medium transition ${
-      isActive ? 'text-[#A40C0B]' : 'text-black'
-    }`;
+    `text-base font-medium transition ${isActive ? 'text-[#A40C0B]' : 'text-black'}`;
 
   const contactClass = ({ isActive }) =>
     `text-base font-medium px-6 py-2 rounded-full transition flex items-center justify-center ${
-      isActive
-        ? 'bg-[#A40C0B] text-white'
-        : 'bg-black text-white hover:bg-[#A40C0B]'
+      isActive ? 'bg-[#A40C0B] text-white' : 'bg-black text-white hover:bg-[#A40C0B]'
     }`;
 
   const currentLanguage =
-    languages.find((lang) => lang.code === i18n.language) ||
-    languages.find((lang) => lang.code === 'cs');
+    languages.find((lang) => lang.code === i18n.language) || languages.find((lang) => lang.code === 'cs');
 
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -64,17 +69,16 @@ const NavBar = () => {
           <NavLink to="/uhlie" className={linkClass}>
             {t('nav_products')}
           </NavLink>
-          {i18n.language === 'cs' || i18n.language === 'sk' ? (
-    <a
-      href="https://www.chutespanelska.cz/grilovaci-uhli/"
-      target="_blank"
-      rel="noopener noreferrer"
-      onClick={() => setIsOpen(false)}
-      className="text-base font-medium text-black transition hover:text-[#A40C0B]"
-    >
-      E-shop
-    </a>
-  ) : null}
+          {(i18n.language === 'cs' || i18n.language === 'sk') && (
+            <a
+              href="https://www.chutespanelska.cz/grilovaci-uhli/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-base font-medium text-black transition hover:text-[#A40C0B]"
+            >
+              E-shop
+            </a>
+          )}
         </nav>
 
         <div className="flex items-center gap-6 relative">
@@ -102,12 +106,11 @@ const NavBar = () => {
                   <button
                     key={code}
                     onClick={() => {
-                      console.log('Changing to:', code);
-                      i18n.changeLanguage(code).then(() => {
-                        setDropdownOpen(false);
-                        setIsOpen(false);
-                        setTimeout(() => window.location.reload(), 100);
-                      });
+                      localStorage.removeItem('i18nextLng');
+                      const domain = domainMap[code];
+                      if (domain) {
+                        window.location.href = domain;
+                      }
                     }}
                     className={`w-full px-2 py-2 hover:bg-gray-100 flex items-center ${
                       i18n.language === code ? 'bg-gray-200' : ''
@@ -147,17 +150,17 @@ const NavBar = () => {
           <NavLink to="/uhlie" onClick={() => setIsOpen(false)} className={linkClass}>
             {t('nav_products')}
           </NavLink>
-          {i18n.language === 'cs' || i18n.language === 'sk' ? (
-    <a
-      href="https://www.chutespanelska.cz/grilovaci-uhli/"
-      target="_blank"
-      rel="noopener noreferrer"
-      onClick={() => setIsOpen(false)}
-      className="text-base font-medium text-black transition hover:text-[#A40C0B]"
-    >
-      E-shop
-    </a>
-  ) : null}
+          {(i18n.language === 'cs' || i18n.language === 'sk') && (
+            <a
+              href="https://www.chutespanelska.cz/grilovaci-uhli/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-base font-medium text-black transition hover:text-[#A40C0B]"
+              onClick={() => setIsOpen(false)}
+            >
+              E-shop
+            </a>
+          )}
         </nav>
       </div>
     </div>

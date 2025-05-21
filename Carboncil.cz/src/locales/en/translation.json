@@ -110,6 +110,12 @@
     "carboncil_usage.closed_grill_title": "Preparation in closed grills (e.g. ceramic kamado):",
     "carboncil_usage.closed_grill_text": "Keep the lid open for the first 10 minutes until the charcoal is evenly ignited, then close the grill.",
     "carboncil_usage.safety_title": "Safety and hygiene:",
-    "carboncil_usage.safety_text": "When handling burning charcoal, use gloves and tools. After grilling, extinguish the ashes thoroughly."
+    "carboncil_usage.safety_text": "When handling burning charcoal, use gloves and tools. After grilling, extinguish the ashes thoroughly.",
+      "cookie.message": "This website uses cookies to ensure the best possible experience.",
+      "cookie.more_info": "More information",
+      "cookie.accept": "I agree",
+      "cookie.reject": "Reject"
+    
+    
 
 }

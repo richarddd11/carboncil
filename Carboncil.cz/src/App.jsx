@@ -7,6 +7,7 @@ import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
 import ProductPageWrapper from './pages/ProductPageWrapper';
 import ScrollToTop from './components/ScrollToTop';
+import CookieConsent from './components/CookieConsent';
 
 const ProtectedApp = () => (
   <>
@@ -19,6 +20,7 @@ const ProtectedApp = () => (
       <Route path="/kontakt" element={<ContactPage />} />
       <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>
+    <CookieConsent />
   </>
 );
 
